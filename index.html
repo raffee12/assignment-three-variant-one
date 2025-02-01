@@ -17,7 +17,7 @@
       <nav
         class="sm:w-[575px] md:w-[1350px] p-4 container mx-auto flex justify-between"
       >
-        <div class="nav__first flex sm:justify-between space-x-1">
+        <div class="nav__first flex items-center sm:justify-between space-x-1">
           <img
             src="./c1-assets/logo-header.png"
             class="w-[30px]"
@@ -47,7 +47,7 @@
           </div>
           <div class="flex space-x-2">
             <button
-              class="border-[#ffdc26] border-[8px] px-[30px] py[10px] rounded-2xl"
+              class="border border-[#ffdc26] px-[30px] py-[10px] rounded-2xl"
             >
               <a href="#" class="font1">Login</a>
             </button>
@@ -61,36 +61,39 @@
     </header>
     <main class="sm:w-[575px] md:w-[1350px] p-4 container mx-auto">
       <!-- Hero Section -->
-      <section class="grid md:grid-cols-2 mt-[100px]">
+      <section
+        class="hero flex items-center justify-center flex-col md:flex-row"
+      >
         <div>
-          <h1 class="text-5xl font-normal font2">
-            Pamper Your Pet <br />Because They Deserve <br />the Best
+          <h1
+            class="heading text-3xl md:text-5xl font-normal font2 custom-width"
+          >
+            Pamper Your Pet Because They Deserve the Best
           </h1>
           <p
-            class="font1 font-normal text-[20px] text-[#383838] leading-7 my-4"
+            class="txt font1 font-normal text-[16px] text-[#383838] leading-7 my-4"
           >
-            Discover a world of treats, toys, and essentials handpicked for
-            <br />
-            your furry friends. Shop now and make tails wag with joy!
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
           </p>
-          <button>
-            <a href="#" class="bg-[#ffdc26] px-[48px] py[20px] rounded-[8px]"
+          <button class="btn">
+            <a href="#" class="bg-[#ffdc26] px-[16px] py-[8px] rounded-[8px]"
               >Find a pet</a
             >
           </button>
         </div>
-        <div class="img"></div>
+        <div class="img">
+          <img src="./c1-assets/cat-big.png" alt="" />
+        </div>
       </section>
       <!-- Category Section -->
       <section>
         <div class="mt-3.5">
           <h2 class="font2 text-[2rem] mb-[2rem]">Browse By Categories</h2>
-          <div
-            class="grid grid-cols-2 md:grid-cols-6 space-y-4 space-x-4 md:space-y-0"
-          >
+          <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
             <!-- Item One -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
+              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center gap-5 flex-col justify-center"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -98,12 +101,12 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Dog</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Dog</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
             <!-- Item two -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col"
+              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col gap-5"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -111,12 +114,12 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Fish</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Fish</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
             <!-- Item Three -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
+              class="rounded-2xl pt-[20px] pb-[100px] gap-5 bg-[#F9DF8A] flex items-center flex-col justify-center"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -124,12 +127,12 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Cat</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Cat</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
             <!-- Item Four -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
+              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center gap-5 flex-col justify-center"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -137,12 +140,12 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Birds</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Birds</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
             <!-- Item Five -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
+              class="rounded-2xl gap-5 pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -150,12 +153,12 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Small Pet</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Small Pet</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
             <!-- Item Six -->
             <div
-              class="rounded-2xl pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
+              class="rounded-2xl gap-5 pt-[20px] pb-[100px] bg-[#F9DF8A] flex items-center flex-col justify-center"
             >
               <div class="relative h-[70px] w-[70px] rounded-full bg-white">
                 <img
@@ -163,8 +166,8 @@
                   class="absolute rounded-full top-[10px] right-[10px]"
                 />
               </div>
-              <p class="font-bold text-[15px]">Rabit</p>
-              <p class="font-normal text-[12px]">3 items</p>
+              <p class="font-bold text-[16px]">Rabit</p>
+              <p class="font-normal text-[16px]">3 items</p>
             </div>
           </div>
         </div>
@@ -176,7 +179,7 @@
           class="grid space-x-6 grid-cols-1 md:[grid-template-columns:1fr_2fr]"
         >
           <!-- Item 1 -->
-          <div class="bg-[#F9DF8A] flex px-6 py-8 rounded-[10px]">
+          <div class="bg-[#F9DF8A] px-6 py-8 rounded-[10px]">
             <div>
               <h2 class="font2 text-2xl">T- Shirt For Dogs</h2>
               <p class="text-[14px] text-[#434343] my-4">
@@ -186,15 +189,44 @@
                 Shop Now
               </button>
             </div>
-            <div><img src="./c1-assets/cute-pet-small.png" alt="" /></div>
+            <div>
+              <img
+                src="./c1-assets/cute-pet-small.png"
+                class="ml-[150px] mt-[-150px]"
+              />
+            </div>
           </div>
           <!-- Item 2 -->
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 space-x-4 space-y-4"
-          >
-            <div class="bg-white p-8 flex space-x-2">
+          <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-4">
+            <div class="bg-white p-8 flex gap-2">
               <div>
                 <img src="./c1-assets/dog-cartoon.png" class="items-start" />
+              </div>
+              <div>
+                <div class="flex space-x-1">
+                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
+                  <p class="text-[12px]">4.5</p>
+                </div>
+                <p class="font-medium font1 text-[12px]">Pet Bed</p>
+                <p class="font-medium font1 text-[12px]">$39.99</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 flex gap-2">
+              <div>
+                <img src="./c1-assets/rabbit-cartoon.png" class="items-start" />
+              </div>
+              <div>
+                <div class="flex space-x-1">
+                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
+                  <p class="text-[12px]">4.5</p>
+                </div>
+                <p class="font-medium font1 text-[12px]">Pet Bed</p>
+                <p class="font-medium font1 text-[12px]">$39.99</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 flex gap-2">
+              <div>
+                <img src="./c1-assets/bird-cartoon.png" class="items-start" />
               </div>
               <div>
                 <div class="flex space-x-1">
@@ -218,9 +250,9 @@
                 <p class="font-medium font1 text-[12px]">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-8 flex space-x-2">
+            <div class="bg-white p-8 flex gap-2">
               <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
+                <img src="./c1-assets/fish-cartoon.png" class="items-start" />
               </div>
               <div>
                 <div class="flex space-x-1">
@@ -233,7 +265,7 @@
             </div>
             <div class="bg-white p-8 flex space-x-2">
               <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
+                <img src="./c1-assets/bird-cartoon.png" class="items-start" />
               </div>
               <div>
                 <div class="flex space-x-1">
@@ -244,9 +276,22 @@
                 <p class="font-medium font1 text-[12px]">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-8 flex space-x-2">
+            <div class="bg-white p-8 flex gap-2">
               <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
+                <img src="./c1-assets/rabbit-cartoon.png" class="items-start" />
+              </div>
+              <div>
+                <div class="flex gap-2">
+                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
+                  <p class="text-[12px]">4.5</p>
+                </div>
+                <p class="font-medium font1 text-[12px]">Pet Bed</p>
+                <p class="font-medium font1 text-[12px]">$39.99</p>
+              </div>
+            </div>
+            <div class="bg-white p-8 flex gap-2">
+              <div>
+                <img src="./c1-assets/pet-couch.png" class="items-start" />
               </div>
               <div>
                 <div class="flex space-x-1">
@@ -257,51 +302,12 @@
                 <p class="font-medium font1 text-[12px]">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-8 flex space-x-2">
+            <div class="hidden bg-white p-8 md:flex gap-2">
               <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
+                <img src="./c1-assets/rabbit-cartoon.png" class="items-start" />
               </div>
               <div>
-                <div class="flex space-x-1">
-                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
-                  <p class="text-[12px]">4.5</p>
-                </div>
-                <p class="font-medium font1 text-[12px]">Pet Bed</p>
-                <p class="font-medium font1 text-[12px]">$39.99</p>
-              </div>
-            </div>
-            <div class="bg-white p-8 flex space-x-2">
-              <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
-              </div>
-              <div>
-                <div class="flex space-x-1">
-                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
-                  <p class="text-[12px]">4.5</p>
-                </div>
-                <p class="font-medium font1 text-[12px]">Pet Bed</p>
-                <p class="font-medium font1 text-[12px]">$39.99</p>
-              </div>
-            </div>
-            <div class="bg-white p-8 flex space-x-2">
-              <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
-              </div>
-              <div>
-                <div class="flex space-x-1">
-                  <img src="./icons/star.png" class="w-[15px] h-[15px]" />
-                  <p class="text-[12px]">4.5</p>
-                </div>
-                <p class="font-medium font1 text-[12px]">Pet Bed</p>
-                <p class="font-medium font1 text-[12px]">$39.99</p>
-              </div>
-            </div>
-            <div class="hidden bg-white p-8 md:flex space-x-2">
-              <div>
-                <img src="./c1-assets/dog-cartoon.png" class="items-start" />
-              </div>
-              <div>
-                <div class="flex space-x-1">
+                <div class="flex gap-2">
                   <img src="./icons/star.png" class="w-[15px] h-[15px]" />
                   <p class="text-[12px]">4.5</p>
                 </div>
@@ -319,7 +325,7 @@
           class="grid [grid-template-columns:1fr] md:[grid-template-columns:2fr_50px_1fr] gap-4"
         >
           <div
-            class="p-[2rem] md:p[0] flex flex-col md:flex-row justify-center md:justify-evenly bg-gradient-to-r from-[#f8ccfb] to-[#acd2fd]"
+            class="p-[2rem] md:p[0] flex flex-col md:flex-row justify-center md:justify-evenly bg-gradient-to-r from-[#f8ccfb] to-[#acd2fd] rounded-[12px]"
           >
             <div class="mt-[-25px] md:mt-20">
               <p class="hidden md:block">Under Price</p>
@@ -342,7 +348,7 @@
             </div>
           </div>
           <div
-            class="[grid-column:1] md:[grid-column:3] flex bg-gradient-to-r from-[#fff9f4] to-[#f9df8a]"
+            class="[grid-column:1] md:[grid-column:3] flex bg-gradient-to-r from-[#fff9f4] to-[#f9df8a] rounded-[12px]"
           >
             <div class="pt-[80px] pl-[40px]">
               <p class="text-[1.5rem] leading-[30px] font2 whitespace-nowrap">
@@ -360,32 +366,27 @@
           </div>
         </div>
       </section>
+
       <section
-        class="rounded-2xl py-[50px] px-[50px] mt-[100px] ml-[50px] bg-[#FFF9F4] flex flex-col md:flex-row gap-10 absolute bottom-[-3150px] md:bottom-[-1600px] w-[83.7566%]"
+        class="rounded-2xl pb-[50px] px-[50px] mt-[50px] md:[100px] ml-[50px] bg-[#FFF9F4] flex flex-col items-center md:flex-row gap-10 absolute bottom-[-1500px] left-[-4px] md:left-[40px] md:bottom-[-1500px] w-[83.7566%]"
       >
         <div>
-          <img
-            src="./c1-assets/cute-pet-small.png"
-            alt=""
-            class="mt-[-100px]"
-          />
+          <img src="./c1-assets/cute-pet-small.png" class="" alt="" />
         </div>
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-5 items-center">
           <h2 class="font2 text-2xl md:text-4xl">Get awesome News!</h2>
           <p class="text-center text-[15px]">
             Exclusive training tips, ticks, product <br />deals and more.
           </p>
           <form>
             <input
-              class="w-[350px] md:w-[400px] bg-white p-4"
+              class="ml-[-25px] w-[350px] md:w-[400px] bg-white p-4"
               type="text"
               placeholder="Enter email...."
             />
           </form>
           <div>
-            <button
-              class="px-[16px] ml-[100px] rounded-[10px] py-[8px] bg-[#FFDC26]"
-            >
+            <button class="px-[16px] rounded-[10px] py-[8px] bg-[#FFDC26]">
               Subscribe
             </button>
           </div>
@@ -394,10 +395,10 @@
     </main>
 
     <footer
-      class="bg-[#F9DF8A] mt-[200px] pt-[500px] md:pt-[200px] px-[100px] grid [grid-template-columns:1fr] md:[grid-template-columns:100px_20px_20px_100px]"
+      class="bg-[#F9DF8A] mt-[250px] pt-[500px] md:pt-[200px] px-[50px] md:px-[100px]"
     >
-      <div class="[grid-column:1]">
-        <div class="flex gap-4 items-center">
+      <div>
+        <div class="flex gap-4 items-center first">
           <img src="./c1-assets/logo-footer.png" />
           <p class="mb-[1rem] font-bold mt-[10px]">Browse Pets</p>
         </div>
@@ -407,14 +408,15 @@
           friends
         </p>
       </div>
-      <div class="[grid-column:1] md:[grid-column:3 / 4]">
+      <div class="second">
         <ul class="mt-4">
           <li class="mb-[12px]">Find a pet</li>
           <li class="mb-[12px]">Breeds</li>
           <li class="mb-[12px]">Contact us</li>
         </ul>
       </div>
-      <div class="[grid-column:1] md:[grid-column:5] md:self-end">
+      <!--  md:self-end -->
+      <div class="third">
         <p class="text-[12px]">Follow Us</p>
         <ul class="flex space-x-2">
           <li><img src="./icons/facebook.png" /></li>

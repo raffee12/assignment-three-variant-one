@@ -6,9 +6,101 @@
 .font2 {
   font-family: "ADLaM Display", serif;
 }
+
+footer {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr 1fr;
+}
+.first {
+  grid-column: 1;
+}
+.second {
+  grid-column: 3;
+}
+.third {
+  grid-column: 5;
+  align-self: flex-end;
+}
+.custom-width {
+  width: 19ch;
+}
+
+@media (max-width: 575px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .first,
+  .second,
+  .third {
+    grid-column: 1;
+  }
+}
+.hero {
+}
+.heading {
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.txt {
+  position: relative;
+  animation: txt;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.btn {
+  position: relative;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 .img {
-  background-image: url(../c1-assets/cat-big.png);
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  animation-name: img;
+  animation-duration: 3s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes img {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes txt {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heading {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+.btn {
+}
+
+.img {
 }
