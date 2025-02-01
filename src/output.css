@@ -2681,6 +2681,7 @@ footer {
   position: relative;
   animation: heading;
   animation-duration: 3s;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .txt {
@@ -2688,12 +2689,14 @@ footer {
   animation: txt;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 .btn {
   position: relative;
   animation-name: btn;
   animation-duration: 3s;
   animation-delay: 2s;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -2701,6 +2704,7 @@ footer {
   position: relative;
   animation-name: img;
   animation-duration: 3s;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 @keyframes img {
@@ -2729,7 +2733,7 @@ footer {
 }
 @keyframes heading {
   0% {
-    top: -50px;
+    top: -100px;
   }
   100% {
     top: -10px;
