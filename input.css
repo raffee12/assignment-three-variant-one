@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.font1 {
+  font-family: "Sora", serif;
+}
+.font2 {
+  font-family: "ADLaM Display", serif;
+}
+.img {
+  background-image: url(../c1-assets/cat-big.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
